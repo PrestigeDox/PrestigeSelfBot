@@ -28,11 +28,11 @@ class General:
 		await ctx.message.delete()
 		await user.send(text)
 
-	@commands.command(hidden=True, aliases=['setgame'])
-	async def setpresence(self, ctx, *, game_name: str):
-		await ctx.message.delete()
-		await bot.change_presence(game=discord.Game(name=str(game_name)))
-		await ctx.send(":white_check_mark: User Presence Has Been Updated")
+#	@commands.command(hidden=True, aliases=['setgame'])
+#	async def setpresence(self, ctx, *, game_name: str):
+#		await ctx.message.delete()
+#		await bot.change_presence(game=discord.Game(name=str(game_name)))
+#		await ctx.send(":white_check_mark: User Presence Has Been Updated")
 
 def setup(bot):
 	bot.add_cog(General(bot))
