@@ -1,3 +1,4 @@
+import discord
 from discord.ext.commands import Bot
 
 @client.command(hidden=True, aliases=['pingpong'])
